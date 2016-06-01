@@ -41,7 +41,7 @@ void cLevel1Scene::Render()
 	renderBitmapString(330, 5, 9, GLUT_BITMAP_HELVETICA_18, "HP : 15", 1, 1, 1);
 }
 
-
+int v=0;
 
 void cLevel1Scene::Update(float tpf /*= 0.0333*/)
 {
@@ -50,6 +50,8 @@ void cLevel1Scene::Update(float tpf /*= 0.0333*/)
 	pelor1->Update();
 	player->Update();
 	enemy->Update();
+	v++;
+	printf("%d",v);
 }
 int flag = 1;
 void cLevel1Scene::ReadKeyboard(unsigned char key, int x, int y, bool press)
@@ -59,17 +61,20 @@ void cLevel1Scene::ReadKeyboard(unsigned char key, int x, int y, bool press)
 	pelor1->ReadKeyboard(key, x, y, press);
 
 	if (keys[32]) {
-		flag++;
-		//TODO : BIKIN 2 DETIK DELAY TIAP PELOR
-		if (flag%2==0) {
-			pelor0->sety(player->Y());
-			pelor0->setx(player->X());
-			puts("0");
-		}
-		else {
-			pelor1->sety(player->Y());
-			pelor1->setx(player->X());
-			puts("1");
+		//TODO : BIKIN 2 DETIK DELAY TIAP PELOR //DONE
+		if (v>=60) {
+			if (flag % 2 == 0) {
+				pelor0->sety(player->Y());
+				pelor0->setx(player->X());
+				flag++;
+				v = 0;
+			}
+			else {
+				pelor1->sety(player->Y());
+				pelor1->setx(player->X());
+				flag++;
+				v = 0;
+			}
 		}
 	}
 	if (press)
