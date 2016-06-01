@@ -1,0 +1,19 @@
+﻿  cTower.cpp
+e:\project smt 4\project komgraf space impact\project komgraf space impact\loderunner\ctower.cpp(63): warning C4101: 'e': unreferenced local variable
+  cTexture.cpp
+  cSound.cpp
+  cPlayer.cpp
+  cPelor.cpp
+  cMenuScene.cpp
+  cLevel1Scene.cpp
+  cGame.cpp
+e:\project smt 4\project komgraf space impact\project komgraf space impact\loderunner\cgame.cpp(98): warning C4101: 'tex_w2': unreferenced local variable
+e:\project smt 4\project komgraf space impact\project komgraf space impact\loderunner\cgame.cpp(97): warning C4101: 'tex_h': unreferenced local variable
+e:\project smt 4\project komgraf space impact\project komgraf space impact\loderunner\cgame.cpp(97): warning C4101: 'tex_w': unreferenced local variable
+e:\project smt 4\project komgraf space impact\project komgraf space impact\loderunner\cgame.cpp(98): warning C4101: 'tex_h2': unreferenced local variable
+  cEnemy.cpp
+  cAssetManager.cpp
+  GLUTMain.cpp
+  Generating Code...
+  LINK : E:\Project smt 4\Project Komgraf Space Impact\Project Komgraf Space Impact\Debug\Shared Framework.exe not found or not built by the last incremental link; performing full link
+  LodeRunner.vcxproj -> E:\Project smt 4\Project Komgraf Space Impact\Project Komgraf Space Impact\Debug\Shared Framework.exe
